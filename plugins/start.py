@@ -87,7 +87,7 @@ async def start_command(client: Client, message: Message):
         start_command_part = text.split(" ", 1)[0] if len(text.split(" ", 1)) > 0 else None
 
         k = await client.send_message(chat_id=message.from_user.id, 
-                                      text=f"<b><i>This File is deleting automatically in {file_auto_delete}. Forward in your Saved Messages..!</i></b>")
+                                      text=f"<b><blockquote><i>This File is deleting automatically in {file_auto_delete}. Forward in your Saved Messages..!</i></blockquote></b>")
 
         # Schedule the file deletion
         asyncio.create_task(delete_files(codeflix_msgs, client, k, start_command_part, message))
@@ -97,13 +97,14 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('⚡️ ᴍᴏᴠɪᴇs', url='https://t.me/+QVewP06XCPFiYWZl'),
-                    InlineKeyboardButton('🍁 sᴇʀɪᴇs', url='https://t.me/webseries_flix')
+                    InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ 𝟷', url='https://t.me/+QVewP06XCPFiYWZl'),
+                    InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ 𝟸', url='https://t.me/webseries_flix')
                 ]
             ]
         )
-        await message.reply_text(
-            text=START_MSG.format(
+        await message.reply_photo(
+            photo=START_PIC,
+            caption=START_MSG.format(
                 first=message.from_user.first_name,
                 last=message.from_user.last_name,
                 username=None if not message.from_user.username else '@' + message.from_user.username,
@@ -136,8 +137,9 @@ async def not_joined(client: Client, message: Message):
     except IndexError:
         pass
 
-    await message.reply(
-        text=FORCE_MSG.format(
+    await message.reply_photo(
+        photo=FORCE_PIC,
+        caption=FORCE_MSG.format(
             first=message.from_user.first_name,
             last=message.from_user.last_name,
             username=None if not message.from_user.username else '@' + message.from_user.username,
