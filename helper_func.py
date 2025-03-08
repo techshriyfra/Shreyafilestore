@@ -1,5 +1,5 @@
-#(©)CodeFlix_Bots
-#rohit_1888 on Tg #Dont remove this line
+#(©)Tech_Shreyansh29
+#Tech_Shreyansh on Tg #Dont remove this line
 
 import base64
 import re
@@ -194,4 +194,4 @@ subscribed2 = filters.create(is_subscribed2)
 subscribed3 = filters.create(is_subscribed3)
 subscribed4 = filters.create(is_subscribed4)
 
-#rohit_1888 on Tg :
+#Tech_Shreyansh29 on Tg :
