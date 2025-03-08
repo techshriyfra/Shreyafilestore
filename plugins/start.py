@@ -1,5 +1,5 @@
-# Don't Remove Credit @CodeFlix_Bots, @rohit_1888
-# Ask Doubt on telegram @CodeflixSupport
+# Don't Remove Credit @Tech_Shreyansh29, MrGhostsx
+# Ask Doubt on telegram @Tech_Shreyansh29
 
 import asyncio
 import os
@@ -171,7 +171,7 @@ async def start_command(client: Client, message: Message):
 
     [
                     InlineKeyboardButton("𝗔𝗯𝗼𝘂𝘁", callback_data = "about"),
-                    InlineKeyboardButton('𝗖𝗵𝗮𝗻𝗻𝗲𝗹𝘀', url='https://t.me/nova_flix')
+                    InlineKeyboardButton('𝗖𝗵𝗮𝗻𝗻𝗲𝗹𝘀', url='https://t.me/Tech_Shreyansh')
 
     ]
             ]
@@ -193,8 +193,8 @@ async def start_command(client: Client, message: Message):
 
 
 #=====================================================================================##
-# Don't Remove Credit @CodeFlix_Bots, @rohit_1888
-# Ask Doubt on telegram @CodeflixSupport
+# Don't Remove Credit @Tech_Shreyansh29, MrGhostsx
+# Ask Doubt on telegram @Tech_Shreyansh29
 
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
