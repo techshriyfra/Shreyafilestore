@@ -1,5 +1,5 @@
-# Don't Remove Credit @CodeFlix_Bots, @rohit_1888
-# Ask Doubt on telegram @CodeflixSupport
+# Don't Remove Credit @Tech_Shreyansh29, @MrGhostsx
+# Ask Doubt on telegram @Tech_Shreyansh29
 
 
 import os
