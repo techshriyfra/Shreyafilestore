@@ -1,5 +1,5 @@
-#Codeflix_Botz
-#rohit_1888 on Tg
+#MrGhostsx
+#Tech_Shreyansh29
 
 import motor, asyncio
 import motor.motor_asyncio
