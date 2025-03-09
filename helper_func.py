@@ -1,6 +1,5 @@
-#(©)Codexbotz
-#Recoded By @Codeflix_Bots
-
+#(©)Tech_Shreyansh29
+#Recoded By @MrGhostsx
 import base64
 import re
 import asyncio
