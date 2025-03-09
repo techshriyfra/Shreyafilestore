@@ -61,7 +61,7 @@ async def start_command(client: Client, message: Message):
         finally:
             await temp_msg.delete()
 
-        codeflix_msgs = []  # List to keep track of sent messages
+        mrghostsx_msgs = []  # List to keep track of sent messages
 
         for msg in messages:
             caption = (CUSTOM_CAPTION.format(previouscaption="" if not msg.caption else msg.caption.html, 
@@ -73,12 +73,12 @@ async def start_command(client: Client, message: Message):
             try:
                 copied_msg = await msg.copy(chat_id=message.from_user.id, caption=caption, parse_mode=ParseMode.HTML, 
                                             reply_markup=reply_markup, protect_content=PROTECT_CONTENT)
-                codeflix_msgs.append(copied_msg)
+                mrghostsx_msgs.append(copied_msg)
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 copied_msg = await msg.copy(chat_id=message.from_user.id, caption=caption, parse_mode=ParseMode.HTML, 
                                             reply_markup=reply_markup, protect_content=PROTECT_CONTENT)
-                codeflix_msgs.append(copied_msg)
+                mrghostsx_msgs.append(copied_msg)
             except Exception as e:
                 print(f"Failed to send message: {e}")
                 pass
@@ -90,7 +90,7 @@ async def start_command(client: Client, message: Message):
                                       text=f"<b><blockquote><i>This File is deleting automatically in {file_auto_delete}. Forward in your Saved Messages..!</i></blockquote></b>")
 
         # Schedule the file deletion
-        asyncio.create_task(delete_files(codeflix_msgs, client, k, start_command_part, message))
+        asyncio.create_task(delete_files(mrghostsx_msgs, client, k, start_command_part, message))
 
         return
     else:
