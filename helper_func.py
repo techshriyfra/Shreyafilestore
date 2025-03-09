@@ -1,5 +1,5 @@
-#(©)Codexbotz
-#Recoded By @Its_Tartaglia_Childe
+#(©)MrGhostsx
+#Recoded By @Tech_Shreyansh29
 
 import base64
 import re
